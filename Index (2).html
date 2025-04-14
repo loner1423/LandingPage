@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StyleSphere - Your Fashion Hub</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefefe;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1520975922071-6c8b48e15c8e') no-repeat center center/cover;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #f0c040;
+    }
+    .main {
+      padding: 2rem;
+      text-align: center;
+    }
+    .main h2 {
+      color: #333;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .feature {
+      background-color: #f8f8f8;
+      padding: 1.5rem;
+      margin: 1rem;
+      border-radius: 12px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .feature img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .feature h3 {
+      margin: 1rem 0 0.5rem;
+      color: #444;
+    }
+    .feature p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>StyleSphere</h1>
+    <p>Trendy, Affordable & Sustainable Fashion</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#collections">Collections</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="main">
+    <h2>Explore Our Latest Collection</h2>
+    <p>Step into style with our newest arrivals. Curated for comfort and class.</p>
+
+    <div class="features" id="collections">
+      <div class="feature">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Menswear" />
+        <h3>Men's Wear</h3>
+        <p>Classy casuals and sleek formals for everyday style and occasions.</p>
+      </div>
+      <div class="feature">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="Womenswear" />
+        <h3>Women's Wear</h3>
+        <p>Bold, beautiful, and comfortable fashion made just for you.</p>
+      </div>
+      <div class="feature">
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" alt="Accessories" />
+        <h3>Accessories</h3>
+        <p>Complete your look with our handpicked accessory range.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <p>📩 Contact us: support@stylesphere.com | 📞 1800-123-456</p>
+    <p>© 2025 StyleSphere. All rights reserved.</p>
+  </footer>
+</body>
+</html>
